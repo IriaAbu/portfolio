@@ -1,0 +1,28 @@
+TACHES PREVUES :
+- Réunion avec l’équipe
+    • choisir User Stories 
+    • repartir tâches
+    • première soutenance
+- Test technique PHP
+
+
+TACHES EFFECTUES :
+- Première réunion avec l’équipe 10h20
+    • Décider des premières pas à faire : User Stories
+    • PO : Lucas
+    • Scrum Master : Rebecca
+- Réunion avec l’équipe 11h20
+    • Estimer les temps des User Stories
+- Test Technique 15h - 17h
+- Soutenance 17h10
+
+
+PROBLEMES RENCONTRES :
+- Pas de problèmes aujourd’hui
+
+TACHES PREVUES POUR LE JOUR SUIVANT :
+- Choisir le thème en appel
+- Décider l’importance de User Stories
+- Sprint
+- Colle
+

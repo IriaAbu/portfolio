@@ -1,0 +1,43 @@
+.img-langue {
+	height: 100px;
+}
+
+.langue {
+	color: rgb(206, 206, 206);
+}
+
+#pdfCv {
+	color: #d3581f;
+	text-shadow: 0 0 10px #2c1308;
+}
+
+#pdfCv:hover {
+	color: white;
+	text-shadow: 0 0 10px black;
+	text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+	.langue {
+		color: black;
+		text-shadow: 0 0 10px white;
+	}
+}
+
+@media (max-width: 450px) {
+	.img-langue {
+		height: 50px;
+	}
+	.section23 h1 {
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 350px) {
+	.section3 a h1 {
+		font-size: 0.9em;
+	}
+	.section3 h2 {
+		font-size: 0.9em;
+	}
+}

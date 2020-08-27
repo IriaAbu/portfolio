@@ -1,0 +1,102 @@
+.section7 textarea, .section7 #email {
+    border: #d87548 2px solid;
+    background: rgba(233, 233, 233, 0.904);
+}
+
+.section7 textarea {
+    margin-bottom: 15%;
+    width: 70%;
+    height: 200px
+}
+
+/* Animation Button Envoyer */
+
+.wrapper {
+    position: fixed;
+    padding-bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.link_wrapper {
+    position: relative;
+}
+
+.section7 #buttonEnvoyer+.icon {
+    background: transparent;
+}
+
+.section7 #buttonEnvoyer {
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #2d2d2d;
+    text-align: center;
+    color: #d87548;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #2d2d2d;
+    transition: all .55s;
+}
+
+.section7 .icon {
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .55s;
+}
+
+.section7 .icon svg {
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: #fff;
+    transition: all .55s;
+}
+
+.section7 #buttonEnvoyer:hover {
+    width: 170px;
+    border: 3px solid #d87548;
+    background: transparent;
+    color: #fff;
+}
+
+.section7 #buttonEnvoyer:hover+.icon {
+    border: 3px solid transparent;
+    right: -25%;
+    background: #f26522;
+}
+
+@media (max-width: 450px) {
+    .section7 #buttonEnvoyer {
+        width: 100px;
+        height: 50px;
+    }
+    .section7 #buttonEnvoyer:hover {
+        width: 150px;
+    }
+}
+
+@media (max-width: 350px) {
+    .section7 textarea {
+        width: 70%;
+        height: 100px;
+        margin-top: -10px;
+    }
+    .section7 #emailMail {
+        margin-bottom: 0;
+    }
+    .section7 h1, .section7 h3 {
+        font-size: 1em;
+    }
+}

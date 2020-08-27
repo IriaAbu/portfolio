@@ -1,0 +1,96 @@
+.section1 button {
+	background: #d3581f;
+}
+
+#span1, #span2, #span3 {
+    display: none;
+    padding: 1rem 0 0.5rem;
+}
+
+#jeSuisComment1, #jeSuisComment2, #jeSuisComment3 {
+    color: rgb(195, 195, 195);
+}
+
+#jeSuisComment1:hover, #jeSuisComment2:hover, #jeSuisComment3:hover {
+    cursor: pointer;
+}
+
+#dLama {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* Animation souligné */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.section1 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.section1 li {
+    display: -webkit-inline-box;
+    display: inline-flex;
+}
+
+.section1 ul a {
+    position: relative;
+    padding: 1rem 0 0.5rem;
+    margin: 0 1.5rem;
+    color: rgb(195, 195, 195);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.section1 ul a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translateX(-50%) scaleX(0);
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-transition: -webkit-transform 250ms;
+    transition: -webkit-transform 250ms;
+    transition: transform 250ms;
+    transition: transform 250ms, -webkit-transform 250ms;
+}
+
+.section1 ul a:hover::after {
+    -webkit-transform: translateX(-50%) scaleX(1);
+    transform: translateX(-50%) scaleX(1);
+}
+
+@media (max-width: 400px) {
+    #dLama {
+        display: none;
+    }
+    #jeSuisComment1, #jeSuisComment2, #jeSuisComment3 {
+        color: white;
+        text-shadow: 0 0 10px black;
+    }
+    .section1 ul a {
+        color: black;
+        text-shadow: 0 0 10px white;
+    }
+
+}
+
+@media (max-width: 350px) {
+	.section1 h1, .section1 h3 {
+        font-size: 1em;
+    }
+}

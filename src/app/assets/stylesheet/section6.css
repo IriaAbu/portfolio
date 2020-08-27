@@ -1,0 +1,38 @@
+.textHobbies {
+    display: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.section6 h3 {
+    color: #bb420a;
+    text-shadow: 0 0 10px black;
+    border: 2px #d3581f solid;
+    padding: 0;
+    width: 50%;
+    box-shadow: rgba(128, 128, 128, 0.397) 0 5px 5px;
+}
+
+.section6 h3:hover {
+    color: white;
+    border: 2px white solid;
+    cursor: pointer;
+}
+
+@media (max-width: 450px) {
+    .section6 p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 350px) {
+    .section6 h1 {
+        font-size: 1em;
+    }
+    .section6 h3 {
+        font-size: 0.9em;
+    }
+    .section6 p {
+        font-size: 0.6em;
+    }
+}

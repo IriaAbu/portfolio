@@ -1,0 +1,63 @@
+$('#titreRead').click(function() {
+    $('#textRead').css('display', 'block')
+    $('#textWrite').css('display', 'none')
+    $('#textDanse').css('display', 'none')
+    $('#textNature').css('display', 'none')
+
+    $('#titreRead').css('color', 'white')
+    $('#titreRead').css('border', '2px white solid')
+    $('#titreEcriture').css('color', '#bb420a')
+    $('#titreEcriture').css('border', '#bb420a 2px solid')
+    $('#titreDanse').css('color', '#bb420a')
+    $('#titreDanse').css('border', '#bb420a 2px solid')
+    $('#titreNature').css('color', '#bb420a')
+    $('#titreNature').css('border', '#bb420a 2px solid')
+})
+
+$('#titreEcriture').click(function() {
+    $('#textWrite').css('display', 'block')
+    $('#textRead').css('display', 'none')
+    $('#textDanse').css('display', 'none')
+    $('#textNature').css('display', 'none')
+
+    $('#titreEcriture').css('color', 'white')
+    $('#titreEcriture').css('border', '2px white solid')
+    $('#titreRead').css('color', '#bb420a')
+    $('#titreRead').css('border', '#bb420a 2px solid')
+    $('#titreDanse').css('color', '#bb420a')
+    $('#titreDanse').css('border', '#bb420a 2px solid')
+    $('#titreNature').css('color', '#bb420a')
+    $('#titreNature').css('border', '#bb420a 2px solid')
+})
+
+$('#titreDanse').click(function() {
+    $('#textDanse').css('display', 'block')
+    $('#textRead').css('display', 'none')
+    $('#textWrite').css('display', 'none')
+    $('#textNature').css('display', 'none')
+
+    $('#titreDanse').css('color', 'white')
+    $('#titreDanse').css('border', '2px white solid')
+    $('#titreRead').css('color', '#bb420a')
+    $('#titreRead').css('border', '#bb420a 2px solid')
+    $('#titreEcriture').css('color', '#bb420a')
+    $('#titreEcriture').css('border', '#bb420a 2px solid')
+    $('#titreNature').css('color', '#bb420a')
+    $('#titreNature').css('border', '#bb420a 2px solid')
+})
+
+$('#titreNature').click(function() {
+    $('#textNature').css('display', 'block')
+    $('#textRead').css('display', 'none')
+    $('#textWrite').css('display', 'none')
+    $('#textDanse').css('display', 'none')
+
+    $('#titreNature').css('color', 'white')
+    $('#titreNature').css('border', '2px white solid')
+    $('#titreRead').css('color', '#bb420a')
+    $('#titreRead').css('border', '#bb420a 2px solid')
+    $('#titreEcriture').css('color', '#bb420a')
+    $('#titreEcriture').css('border', '#bb420a 2px solid')
+    $('#titreDanse').css('color', '#bb420a')
+    $('#titreDanse').css('border', '#bb420a 2px solid')
+})

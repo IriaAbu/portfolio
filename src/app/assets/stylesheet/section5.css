@@ -1,0 +1,78 @@
+.img-link {
+	display: inline-block;
+	width: 100px;
+}
+
+.section5 h1 {
+	text-transform: capitalize;
+}
+
+.section5 button {
+	border: none;
+	cursor: pointer;
+}
+
+.divlogo {
+	padding-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align: center;
+	position: relative;
+	margin: auto;
+}
+
+.flex-1 {
+	flex: 1;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.section5 .button {
+	padding: 1rem 2rem;
+	display: inline-block;
+	position: relative;
+	will-change: transform;
+}
+
+.section5 .btn {
+	position: relative;
+	background: rgb(195, 195, 195);
+	;
+	overflow: hidden;
+	transition: 0.3s ease-in-out;
+	border-radius: 0.3rem;
+	z-index: 1;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.section5 .btn a {
+	color: rgb(82, 82, 82);
+}
+
+.section5 .btn:hover {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	transform: scale(0.95);
+	background-color: #ebaa8d;
+}
+
+@media (max-width: 790px) {
+	.section5 .button {
+		padding: 0.5rem 1rem;
+	}
+	.img-link {
+		width: 70px;
+	}
+}
+
+@media (max-width: 350px) {
+	.section5 h1 {
+		font-size: 0.9em;
+	}
+	.section5 .button {
+		padding: 0.1rem 0.5rem;
+	}
+	.img-link {
+		width: 50px;
+	}
+}

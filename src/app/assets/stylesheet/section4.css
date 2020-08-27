@@ -1,0 +1,244 @@
+.img-projet {
+    display: inline-block;
+    height: 300px;
+    width: auto;
+}
+
+#decouvrir {
+    color: #d3581f;
+}
+
+#decouvrir:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Animation titre */
+
+@-webkit-keyframes topAnimation {
+    from {
+        -webkit-transform: translate(0rem, 0);
+        transform: translate(0rem, 0);
+    }
+    to {
+        -webkit-transform: translate(0rem, 3.5rem);
+        transform: translate(0rem, 3.5rem);
+    }
+}
+
+@keyframes topAnimation {
+    from {
+        -webkit-transform: translate(0rem, 0);
+        transform: translate(0rem, 0);
+    }
+    to {
+        -webkit-transform: translate(0rem, 3.5rem);
+        transform: translate(0rem, 3.5rem);
+    }
+}
+
+@-webkit-keyframes bottomAnimation {
+    from {
+        -webkit-transform: translate(-11.5rem, 0);
+        transform: translate(-11.5rem, 0);
+    }
+    to {
+        -webkit-transform: translate(0rem, 0);
+        transform: translate(0rem, 0);
+    }
+}
+
+@keyframes bottomAnimation {
+    from {
+        -webkit-transform: translate(-11.5rem, 0);
+        transform: translate(-11.5rem, 0);
+    }
+    to {
+        -webkit-transform: translate(0rem, 0);
+        transform: translate(0rem, 0);
+    }
+}
+
+.section4 button.btn {
+    text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    border: 0;
+    position: relative;
+    letter-spacing: 0.15em;
+    margin: 0 auto;
+    padding: 1rem 2.5rem;
+    background: transparent;
+    outline: none;
+    font-size: 28px;
+    color: #000000;
+    -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
+    cursor: auto;
+}
+
+.section4 button.btn::after, .section4 button.btn::before {
+    border: 0;
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 10%;
+    -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: -2;
+    border-radius: 50%;
+}
+
+.section4 button.btn::before {
+    border: 0;
+    background-color: #d3581f;
+    top: -0.75rem;
+    left: 0.5rem;
+    -webkit-animation: topAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite alternate;
+    animation: topAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite alternate;
+}
+
+.section4 button.btn::after {
+    background-color: #d87548;
+    top: 3rem;
+    left: 13rem;
+    -webkit-animation: bottomAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate;
+    animation: bottomAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate;
+}
+
+.section4 button.btn:hover {
+    color: white;
+}
+
+.section4 button.btn:hover::before, .section4 button.btn:hover::after {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    -webkit-animation: none;
+    animation: none;
+}
+
+.section4 button.btn:hover::after {
+    left: 0rem;
+}
+
+.section4 button.btn:hover::before {
+    top: 0.5rem;
+    left: 0.35rem;
+}
+
+/* Animation photo */
+
+.img-projet {
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.img-projet:hover {
+    -ms-transform: scale(1.9);
+    /* IE 9 */
+    -webkit-transform: scale(1.9);
+    /* Safari 3-8 */
+    transform: scale(1.9);
+}
+
+/* Animation boutons */
+
+.container2 {
+    margin-top: 30px;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.follow {
+    display: inline-block;
+    cursor: default;
+    padding: 0;
+    margin: 0 .5em;
+    position: relative;
+    text-align: center;
+}
+
+.follow:hover .label {
+    opacity: 0;
+    -webkit-transition: opacity .5s .125s ease-out;
+    transition: opacity .5s .125s ease-out;
+}
+
+.follow:hover .icon {
+    border-radius: 1em;
+    margin: 0 0;
+}
+
+.icon, .label {
+    background-color: #d3581f;
+    line-height: 2rem;
+}
+
+.label {
+    border-radius: 1rem;
+    position: absolute;
+    font-size: .618em;
+    font-weight: 900;
+    letter-spacing: .0816em;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    pointer-events: none;
+    text-transform: uppercase;
+    -webkit-transition: opacity .5s .75s ease-out;
+    transition: opacity .5s .75s ease-out;
+}
+
+.icon {
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 2em;
+    margin: 0 -.5em;
+    -webkit-transition: background-color .5s ease-out, border-radius .5s .25s ease-out, margin .5s .25s ease-out;
+    transition: background-color .5s ease-out, border-radius .5s .25s ease-out, margin .5s .25s ease-out;
+    width: 2em;
+}
+
+.icon.first {
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+    margin-left: 0;
+}
+
+.icon.last {
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+    margin-right: 0;
+}
+
+.icon:hover {
+    background-color: #ebaa8d;
+    color: #111;
+}
+
+@media (max-width: 450px) {
+    .img-projet {
+        height: 100px;
+    }
+    .section4 p {
+        font-size: 0.7em;
+    }
+    .section4 button.btn {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 350px) {
+    #projetNom {
+        font-size: 0.9em;
+    }
+    .section4 button.btn {
+        font-size: 10px;
+    }
+}
