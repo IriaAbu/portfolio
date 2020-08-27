@@ -1,3 +1,7 @@
+# PREMIER PAS
+
+Installer composer et phpmailer
+
 # Fullpage Scrolling with Vanilla JavaScript
 
 ### Demo :earth_americas:
